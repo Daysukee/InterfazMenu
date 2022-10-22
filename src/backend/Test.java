@@ -36,13 +36,14 @@ public class Test {
             (DB_URL,DB_USER,DB_PASSWD);
          statement=connection.createStatement();
          resultSet=statement.executeQuery
-            ("SELECT * FROM books");
+            ("SELECT * FROM Usuarios");
          while(resultSet.next()){
-            System.out.printf("%s\t%s\t%s\t%f\n",
-            resultSet.getString(1),
+            System.out.printf("%d\t%s\t%s\t%s\t%s\n",
+            resultSet.getInt(1),
             resultSet.getString(2),
             resultSet.getString(3),
-            resultSet.getFloat(4));
+            resultSet.getString(4),
+            resultSet.getString(5));    
          }
 
       }catch(SQLException ex){
