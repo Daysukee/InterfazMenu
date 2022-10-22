@@ -6,6 +6,7 @@ package backend.model;
  */
 public class Producto {
 
+    private int id;
     private String nombre;
     private String descripcion;
     private float precioCompra;
@@ -14,6 +15,14 @@ public class Producto {
     private String unidadMedida;
     private int cantidadMedida;
     private boolean isActive = true;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;
