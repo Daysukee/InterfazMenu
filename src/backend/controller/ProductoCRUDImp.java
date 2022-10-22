@@ -56,7 +56,14 @@ public class ProductoCRUDImp implements ProductoCRUD {
     
     @Override
     public void delete(Producto producto){
-    
+        try {
+            Connection con = FarmaciaDb.getConnection();
+            PreparedStatement pstmt = con.prepareStatement("DELETE FROM Productos WHERE Producto_id=?");
+            pstmt.setInt(1, producto.getId());
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        
     }
 
     @Override

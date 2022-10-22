@@ -36,5 +36,12 @@ public class Test{
         prod2.setCantidadMedida(4);         
         
 //        dao.update(prod2);
+
+        // DELETE
+        Producto prod3 = new Producto();
+        prod3.setId(1010);
+//        dao.delete(prod3);
+
+
     }
 }
