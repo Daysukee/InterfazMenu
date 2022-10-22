@@ -42,6 +42,9 @@ public class Test{
         prod3.setId(1010);
 //        dao.delete(prod3);
 
-
+        // GET SINGLE PRODUCT
+        Producto prod4 = dao.get(1001);
+        System.out.println(prod4.getId()+"\t"+prod4.getNombre()+"\t"+prod4.getPrecioCompra()+"\t"+prod4.getStockActual());
+        
     }
 }

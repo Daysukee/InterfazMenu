@@ -68,7 +68,28 @@ public class ProductoCRUDImp implements ProductoCRUD {
 
     @Override
     public Producto get(int id) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        Producto prod = new Producto();
+        try {
+            Connection con = FarmaciaDb.getConnection();            
+            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM Productos WHERE Producto_id=?");
+            pstmt.setInt(1,id);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()){
+                prod.setId(rs.getInt("Producto_id"));
+                prod.setNombre(rs.getString("Producto_nombre"));
+                prod.setDescripcion(rs.getString("Producto_descripcion"));
+                prod.setPrecioCompra(rs.getFloat("Producto_precio_compra"));
+                prod.setCategoriaId(rs.getInt("Categoria_id"));
+                prod.setStockActual(rs.getInt("Producto_stock_actual"));
+                prod.setUnidadMedida(rs.getString("Producto_unidad_medida"));
+                prod.setCantidadMedida(rs.getInt("Producto_cantidad_unidades"));
+                prod.setIsActive(rs.getBoolean("Producto_activo"));
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();            
+        }
+        return prod;
     }
 
     @Override
