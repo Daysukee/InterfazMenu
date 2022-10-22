@@ -6,21 +6,23 @@ package backend.model;
  */
 public class Producto {
 
-    private int id;
     private String nombre;
+    private String descripcion;
     private float precioCompra;
     private int categoriaId;
     private int stockActual;
     private String unidadMedida;
-    private String cantidadMedida;
+    private int cantidadMedida;
     private boolean isActive = true;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public Producto(String nombre, String descripcion, float precioCompra, int categoriaId, int stockActual, String unidadMedida, int cantidadMedida) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precioCompra = precioCompra;
+        this.categoriaId = categoriaId;
+        this.stockActual = stockActual;
+        this.unidadMedida = unidadMedida;
+        this.cantidadMedida = cantidadMedida;
     }
 
     public String getNombre() {
@@ -29,6 +31,14 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public float getPrecioCompra() {
@@ -63,11 +73,11 @@ public class Producto {
         this.unidadMedida = unidadMedida;
     }
 
-    public String getCantidadMedida() {
+    public int getCantidadMedida() {
         return cantidadMedida;
     }
 
-    public void setCantidadMedida(String cantidadMedida) {
+    public void setCantidadMedida(int cantidadMedida) {
         this.cantidadMedida = cantidadMedida;
     }
 
@@ -78,15 +88,5 @@ public class Producto {
     public void setIsActive(boolean isActive) {
         this.isActive = isActive;
     }
-    
-    public Producto(int id, String nombre, float precioCompra, int categoriaId, int stockActual, String unidadMedida, String cantidadMedida) {
-        this.id = id;
-        this.nombre = nombre;
-        this.precioCompra = precioCompra;
-        this.categoriaId = categoriaId;
-        this.stockActual = stockActual;
-        this.unidadMedida = unidadMedida;
-        this.cantidadMedida = cantidadMedida;
-    }
-    
+
 }
