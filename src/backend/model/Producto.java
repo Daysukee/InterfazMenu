@@ -4,7 +4,7 @@ package backend.model;
  *
  * @author codeli4m
  */
-public class Product {
+public class Producto {
 
     private int id;
     private String nombre;
@@ -79,7 +79,7 @@ public class Product {
         this.isActive = isActive;
     }
     
-    public Product(int id, String nombre, float precioCompra, int categoriaId, int stockActual, String unidadMedida, String cantidadMedida) {
+    public Producto(int id, String nombre, float precioCompra, int categoriaId, int stockActual, String unidadMedida, String cantidadMedida) {
         this.id = id;
         this.nombre = nombre;
         this.precioCompra = precioCompra;
