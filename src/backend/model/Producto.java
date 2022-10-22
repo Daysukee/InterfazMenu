@@ -15,15 +15,17 @@ public class Producto {
     private int cantidadMedida;
     private boolean isActive = true;
 
-    public Producto(String nombre, String descripcion, float precioCompra, int categoriaId, int stockActual, String unidadMedida, int cantidadMedida) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precioCompra = precioCompra;
-        this.categoriaId = categoriaId;
-        this.stockActual = stockActual;
-        this.unidadMedida = unidadMedida;
-        this.cantidadMedida = cantidadMedida;
-    }
+//    Producto(){}
+    
+//    public Producto(String nombre, String descripcion, float precioCompra, int categoriaId, int stockActual, String unidadMedida, int cantidadMedida) {
+//        this.nombre = nombre;
+//        this.descripcion = descripcion;
+//        this.precioCompra = precioCompra;
+//        this.categoriaId = categoriaId;
+//        this.stockActual = stockActual;
+//        this.unidadMedida = unidadMedida;
+//        this.cantidadMedida = cantidadMedida;
+//    }
 
     public String getNombre() {
         return nombre;

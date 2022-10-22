@@ -28,7 +28,7 @@ public class ProductoCRUDImp implements ProductoCRUD {
             pstmt.setInt(5, producto.getStockActual());
             pstmt.setString(6, producto.getUnidadMedida());
             pstmt.setInt(7, producto.getCantidadMedida());
-            
+            pstmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }
