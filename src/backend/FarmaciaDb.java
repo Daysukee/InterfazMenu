@@ -22,7 +22,7 @@ public class FarmaciaDb {
                 Class.forName(DB_DRV);
                 con = DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWD);                
          } catch (SQLException ex) {
-                System.out.println("An error ocurred connecting database ");
+                System.out.println("Ocurrio un error en la base de datos, favor de revisar ");
                 System.out.println(ex);
          }
         }
