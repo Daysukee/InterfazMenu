@@ -79,6 +79,6 @@ public class CategoríaCRUDImp implements CategoriaCRUD {
 
     @Override
     public List<Categoria> list() {
-            throw new UnsupportedOperationException("Not supported yet.");
+            throw new UnsupportedOperationException("Aún no es compatible.");
         }
 }
