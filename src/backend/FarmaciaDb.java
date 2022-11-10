@@ -14,7 +14,7 @@ public class FarmaciaDb {
     static final String DB_URL = "jdbc:mysql://localhost:3306/inventario_farmacia";
     static final String DB_DRV = "com.mysql.cj.jdbc.Driver";
     static final String DB_USER = "root";
-    static final String DB_PASSWD = "newpasswordmysql";
+    static final String DB_PASSWD = "123456789";
     
     public static Connection getConnection() throws SQLException, ClassNotFoundException{
         if (con == null){
