@@ -17,46 +17,57 @@ public class Producto {
     private boolean isActive = true;
 
     public int getId() {
+
         return id;
     }
 
     public void setId(int id) {
+
         this.id = id;
     }
 
     public String getNombre() {
+
         return nombre;
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
     public String getDescripcion() {
+
         return descripcion;
     }
 
     public void setDescripcion(String descripcion) {
+
         this.descripcion = descripcion;
     }
 
     public float getPrecioCompra() {
+
         return precioCompra;
     }
 
     public void setPrecioCompra(float precioCompra) {
+
         this.precioCompra = precioCompra;
     }
 
     public int getCategoriaId() {
+
         return categoriaId;
     }
 
     public void setCategoriaId(int categoriaId) {
+
         this.categoriaId = categoriaId;
     }
 
     public int getStockActual() {
+
         return stockActual;
     }
 

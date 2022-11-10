@@ -3,7 +3,7 @@ package backend;
 import java.util.Random;
 
 import backend.model.Producto;
-import backend.controller.ProductoCRUDImp;
+import backend.controller.Producto.ProductoCRUDImp;
 
 public class Test{
     public static void main(String[] args) {
